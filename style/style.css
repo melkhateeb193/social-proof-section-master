@@ -159,9 +159,9 @@ color: var(--Soft-Pink);
         background: url(/images/bg-pattern-top-mobile.svg), url(/images/bg-pattern-bottom-mobile.svg);
         background-repeat: no-repeat;
         background-position: top 0vw left 0, right 0 bottom 85px;
-    }
+        }
     main{
-        width: 350px;
+        width: 450px;
     }
     .header {
         flex-direction: column;
@@ -175,7 +175,7 @@ color: var(--Soft-Pink);
         padding: 5px;
         margin: auto;
         font-size: 25px;
-        width: 220px;
+        /* width: 220px; */
         margin-bottom: 1rem;
         font-weight: 700;
     }
@@ -192,15 +192,18 @@ color: var(--Soft-Pink);
         margin-bottom: 1rem ;
     }
     .rate1 , .rate2 , .rate3 {
+        margin-right: 20px;
         margin-left: 0;
         margin-bottom: 15px;
-        max-width: 100%;
+        width: 260px;
         justify-content: space-between;
         flex-direction: column-reverse;
     }
+    .rate1 p, .rate2 p, .rate3 p {
+margin-right: 20px;    }
     .stars { 
      margin-top: 10px;
-     margin-right: 60px;
+     margin-right: 50px;
     }
 
     .review {
