@@ -1,0 +1,226 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body {
+    background-color: var(--White);
+    font-family: 'League Spartan', sans-serif;
+    Font-size: 15px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background-image: url(../images/bg-pattern-top-desktop.svg) , url(../images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat ;
+    background-position: right 67vw bottom 57vh, left 60vw top -21vh;
+}
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px
+}
+
+.head {
+    width: 500px;
+}
+.head-1{
+    margin-top: 20px;
+}
+.head h1 {
+    font-size: 45px;
+    font-weight: 900;
+    width: 300px;
+    color: var(--Very-Dark-Magenta);
+    line-height: 40px;
+}
+
+.head p {
+    font-size: 18px;
+    font-weight: 400;
+    width: 430px;
+    color: var(--Dark-Grayish-Magenta);
+    margin-top: 20px;
+}
+
+.rate1 , .rate2 , .rate3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    width: 400px;
+    height: 50px;
+    background-color: var(--Light-Grayish-Magenta);
+    border-radius: 10px;
+    margin: 0 0 20px;
+}
+
+.rate1 .stars , .rate2 .stars , .rate3 .stars 
+{
+    margin-left: 20px;
+}
+.rate1 .stars img , .rate2 .stars img , .rate3 .stars img{
+
+    margin: 0 3px;
+}
+
+.rate1 p , .rate2 p , .rate3 p {
+    margin-right: 50px;
+    color: var(--Very-Dark-Magenta);
+    font-weight: 700;
+}
+.rate2 {
+    margin-left: 33px;
+}
+.rate3 {
+    margin-left: 70px;
+}
+
+.review {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+height: 300px;
+}
+.review1 , .review2 , .review3{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Very-Dark-Magenta);
+    width: 300px;
+    height: 200px;
+    margin-top: 30px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.review-img1 , .review-img2 , .review-img3 {
+    display: flex;
+    margin: 30px 0 10px 30px;
+}
+.review-img1  img ,.review-img2  img,.review-img3  img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.review-text1 p,.review-text2 p,.review-text3 p {
+    margin-left: 20px;
+}
+
+.review-text1 .name,.review-text2 .name,.review-text3 .name  {
+color: #fff;
+font-weight: 500 ;
+}
+.review-text1 .tag,.review-text2 .tag,.review-text3 .tag {
+color: var(--Soft-Pink);
+}
+
+.text-review1 P,.text-review2 P,.text-review3 P {
+    padding: 20px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 400;
+}
+
+.review2 {
+    margin-top: 45px;
+    margin-right: 10px;
+}
+.review3{
+    margin-top: 60px;
+} 
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: var(--Very-Dark-Magenta);
+    font-weight: 700;
+}
+
+@media (max-width: 800px)  {
+    body {
+        height: fit-content;
+        overflow: visible;
+        background: url(/images/bg-pattern-top-mobile.svg), url(/images/bg-pattern-bottom-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: top 0vw left 0, right 0 bottom 85px;
+    }
+    main{
+        width: 350px;
+    }
+    .header {
+        flex-direction: column;
+    }
+    .head h1 {
+        text-align: center;
+        line-height: .7;
+        padding: 5px;
+        margin: auto;
+        font-size: 25px;
+        width: 220px;
+        margin-bottom: 1rem;
+        font-weight: 700;
+    }
+    .head-1 {
+        align-items: center;
+        padding: 20px;
+    }
+
+
+    .head p {
+        text-align: center;
+        margin: auto;
+        width: 290px;
+        margin-bottom: 1rem ;
+    }
+    .rate1 , .rate2 , .rate3 {
+        margin-left: 0;
+        margin-bottom: 15px;
+        max-width: 100%;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+    }
+    .stars { 
+     margin-top: 10px;
+     margin-right: 60px;
+    }
+
+    .review {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+       height: fit-content;
+     } 
+     .review2 {
+        margin-top: 10px;
+        margin-left: 0;
+        margin-right: 0;    
+     }
+
+      .review3 {
+        margin-top: 10px;
+        margin-left: 0;
+        margin-right: 0;
+     }
+     .attribution {
+        margin-top: 5px;
+
+     }
+     
+}
