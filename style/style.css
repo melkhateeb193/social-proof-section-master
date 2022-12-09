@@ -165,6 +165,9 @@ color: var(--Soft-Pink);
     }
     .header {
         flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .head h1 {
         text-align: center;
