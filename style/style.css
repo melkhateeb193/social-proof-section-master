@@ -182,6 +182,7 @@ color: var(--Soft-Pink);
     .head-1 {
         align-items: center;
         padding: 20px;
+        margin-left: 25px;
     }
 
 
@@ -227,7 +228,7 @@ margin-right: 20px;    }
         margin-right: 0;
      }
      .attribution {
-        margin-top: 5px;
+        margin: 10px;
 
      }
      
