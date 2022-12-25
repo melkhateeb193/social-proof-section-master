@@ -152,8 +152,9 @@ color: var(--Soft-Pink);
     font-weight: 700;
 }
 
-@media (max-width: 800px)  {
+@media (max-width: 860px)  {
     body {
+        width: 100%;
         height: fit-content;
         overflow: visible;
         background: url(/images/bg-pattern-top-mobile.svg), url(/images/bg-pattern-bottom-mobile.svg);
@@ -161,9 +162,10 @@ color: var(--Soft-Pink);
         background-position: top 0vw left 0, right 0 bottom 85px;
         }
     main{
-        width: 450px;
+        width: 100%;
     }
     .header {
+        width: 100%;
         flex-direction: column;
         display: flex;
         justify-content: center;
